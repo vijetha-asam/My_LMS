@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="124.574" tests="7" skipped="0" failures="1" errors="0">
+<testcase classname="Admin Validating Batch Page" name="Validate data rows of checkbox" time="88.659">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='batch']&quot;}
+  (Session info: chrome=109.0.5414.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d73d662e7193a966311d3fd1c4ae87, findElement {using=xpath, value=//button[@id='batch']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\sateesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55884}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55884/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d73d662e7193a966311d3fd1c4ae87">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='batch']"}
+  (Session info: chrome=109.0.5414.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d73d662e7193a966311d3fd1c4ae87, findElement {using=xpath, value=//button[@id='batch']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.168, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\sateesh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55884}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55884/devtoo..., se:cdpVersion: 109.0.5414.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d73d662e7193a966311d3fd1c4ae87
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.lms.ui.pageobjects.BatchPage.clickBatch(BatchPage.java:49)
+	at com.lms.ui.stepdefinitions.BatchSteps.admin_clicks_from_navigation_bar(BatchSteps.java:29)
+	at ✽.Admin clicks "Batch" from navigation bar(file:///E:/New-Selenium/LMS-Team08-Automation/src/test/resources/features/4Batch.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+When Admin clicks "Batch" from navigation bar...............................failed
+Then Each row in the data table should have a checkbox......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Admin Validating Batch Page" name="Validate pagination in the Batch Page" time="122.548">
+<system-out><![CDATA[
+Given Admin is on dashboard page after Login................................passed
+When Admin clicks "Batch" from navigation bar...............................passed
+Then Admin should see the pagination controls under the data table..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Admin Validating Batch Page" name="Validate &quot;+ A New batch&quot; in Batch Page" time="79.907">
+<system-out><![CDATA[
+Given Admin is on dashboard page after Login................................passed
+When Admin clicks "Batch" from navigation bar...............................passed
+Then Admin should be able to see the "+ A New batch" button.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Admin Validating Batch Page" name="Validate landing in Batch page" time="98.538">
+<system-out><![CDATA[
+Given Admin is on dashboard page after Login................................passed
+When Admin clicks "Batch" from navigation bar...............................passed
+Then Admin should see the "Manage Batch" in the URL.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Admin Validating Batch Page" name="Validate header in the Batch Page" time="97.262">
+<system-out><![CDATA[
+Given Admin is on dashboard page after Login................................passed
+When Admin clicks "Batch" from navigation bar...............................passed
+Then Admin should see the "Manage Batch" in the header......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Admin Validating Batch Page" name="Validate data table headers in the Batch Page" time="94.814">
+<system-out><![CDATA[
+Given Admin is on dashboard page after Login................................passed
+When Admin clicks "Batch" from navigation bar...............................passed
+Then Admin Should see the data table with headers Batch name, Batch Description,Batch Status, No. of classes, Program Name, EditDelete.passed
+]]></system-out>
+</testcase>
+<testcase classname="Admin Validating Batch Page" name="Validate Delete button in Batch Page" time="93.759">
+<system-out><![CDATA[
+Given Admin is on dashboard page after Login................................passed
+When Admin clicks "Batch" from navigation bar...............................passed
+Then Admin should be able to see the "Delete" icon button that is disabled..passed
+]]></system-out>
+</testcase>
+</testsuite>
